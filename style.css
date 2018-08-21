@@ -1,5 +1,5 @@
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 18px;
   line-height: 34px;
   color: #54536F;
@@ -19,6 +19,12 @@ body {
   clear: both;
 }
 
+p {
+    background: -webkit-linear-gradient(#988a8a, #54536f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 h1,
 h2,
 h3,
@@ -33,7 +39,7 @@ p:last-child {
 h1,
 h2,
 h3 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
   font-weight: 700;
   color: #54536F;
 }
@@ -63,23 +69,13 @@ h3 {
   border-bottom: 2px solid #ccc;
 }
 
-#logo {
-  float: left;
-  width: 250px;
-  height: 90px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 90px;
-  color: #54536F;
-  text-align: center;
-  text-decoration: none;
-  background: #fff;
-}
-
-nav {
+.nav {
   float: right;
   margin-top: 25px;
+}
+
+.nav-item {
+  color: #54536F;
 }
 
 nav a {
